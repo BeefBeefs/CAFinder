@@ -202,10 +202,82 @@ def src_topclassactions():
     return out
 
 
+# ---------- sources 5 & 6: ClaimWatch and FileYourClaim (heading + body chunks) ----------
+def chunks(h):
+    """Split a page into (heading, body_html) pairs at h2/h3/h4 tags."""
+    parts = re.split(r"(?is)<h[234][^>]*>(.*?)</h[234]>", h)
+    out = []
+    for i in range(1, len(parts) - 1, 2):
+        title = re.sub(r"\s+", " ", htmllib.unescape(re.sub(r"<[^>]+>", "", parts[i]))).strip()
+        out.append((title, parts[i + 1]))
+    return out
+
+
+def first_link(body_html, page):
+    m = re.search(r'href="(https://[^"#]+|/settlements?/[^"#]+)"', body_html)
+    if not m:
+        return page
+    u = m.group(1)
+    return u if u.startswith("http") else re.match(r"https?://[^/]+", page).group(0) + u
+
+
+def diag(label, cs):
+    print("   [diag] %s: %d heading chunks" % (label, len(cs)))
+    for t, b in cs[:2]:
+        print("   [diag] sample:", t[:60], "|", to_text(b).replace("\n", " / ")[:160])
+
+
+def parse_claimwatch(h, page):
+    out, cs = [], chunks(h)
+    for title, body in cs:
+        t = to_text(body)
+        m = re.search(r"(?im)^(.*?)\s*no proof needed", t)
+        d = parse_date(m.group(1)) if m else None
+        if not d:
+            continue
+        desc = next((l for l in t.split("\n") if len(l) > 40 and not parse_date(l[:25])), "")
+        out.append(entry(title, d, "", desc, first_link(body, page)))
+    if not out:
+        diag("ClaimWatch", cs)
+    return out
+
+
+def src_claimwatch():
+    page = "https://claimwatch.org/settlements/no-proof"
+    return parse_claimwatch(get(page), page)
+
+
+def parse_fileyourclaim(h, page):
+    out, cs = [], chunks(h)
+    for title, body in cs:
+        t = to_text(body)
+        if "no proof" not in t.lower():
+            continue
+        if re.search(r"(?i)proof of purchase[^.]{0,30}required|asks? (?:people )?(?:for|to provide) proof|claim id is required", t):
+            continue  # the page itself warns the official form wants proof
+        m = re.search(r"(?i)deadline:?\s*([A-Za-z]+ \d{1,2},? \d{4})", t)
+        d = parse_date(m.group(1)) if m else None
+        if not d:
+            continue
+        pay = re.search(r"\$\d[\d,.]*(?:\+| ?[MBK])?", t)
+        desc = next((l for l in t.split("\n") if len(l) > 40), "")
+        out.append(entry(title, d, pay.group(0) if pay else "", desc, first_link(body, page)))
+    if not out:
+        diag("FileYourClaim", cs)
+    return out
+
+
+def src_fileyourclaim():
+    page = "https://fileyourclaim.co/open-class-action-settlements"
+    return parse_fileyourclaim(get(page), page)
+
+
 SOURCES = [
     ("OpenClassActions", src_openclassactions),
     ("ClassAction.org", src_classaction_org),
     ("ClaimDepot", src_claimdepot),
+    ("ClaimWatch", src_claimwatch),
+    ("FileYourClaim", src_fileyourclaim),
 ]
 
 
