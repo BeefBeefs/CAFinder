@@ -20,7 +20,7 @@
 - The scraper was written without being able to test it against the live site. Read the first run's log.
   If it keeps 0 items, the site's layout differs from what the script expects; the label names in
   `parse_detail()` are the place to adjust.
-- It reads five sources (OpenClassActions, ClassAction.org, ClaimDepot, ClaimWatch, FileYourClaim). Top Class Actions blocks automated requests (HTTP 403), so it stays link-only. Each is isolated, so one breaking doesn't stop the others. The log prints `[Source] kept N` for each; a source stuck at 0 needs its parser adjusted. To add a site, write another `src_*` function and add it to `SOURCES`.
+- It reads four sources (OpenClassActions, ClaimDepot, ClaimWatch, FileYourClaim). ClassAction.org and Top Class Actions are link-only: one loads its data with JavaScript, the other blocks bots. Top Class Actions blocks automated requests (HTTP 403), so it stays link-only. Each is isolated, so one breaking doesn't stop the others. The log prints `[Source] kept N` for each; a source stuck at 0 needs its parser adjusted. To add a site, write another `src_*` function and add it to `SOURCES`.
 - Settlements that only pay people on a notice list (data breaches, wage cases, etc.) are filtered out by `NOTICE_ONLY`; tweak that pattern if it's too strict or too loose.
 - Check each site's terms before scraping, keep the 1-second delay, and always confirm details on the
   official settlement site before filing.

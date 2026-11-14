@@ -127,7 +127,8 @@ def src_openclassactions():
     return out
 
 
-# ---------- source 2: ClassAction.org (cards: title, payout, "Deadline 11/16/26", "Proof Required? No") ----------
+# ---------- (disabled) ClassAction.org: its server HTML has no "Proof Required" text (likely filled in by JavaScript), so it is link-only ----------
+# source 2: ClassAction.org (cards: title, payout, "Deadline 11/16/26", "Proof Required? No") ----------
 def src_classaction_org():
     out = []
     for page in ("https://www.classaction.org/", "https://www.classaction.org/settlements"):
@@ -274,7 +275,6 @@ def src_fileyourclaim():
 
 SOURCES = [
     ("OpenClassActions", src_openclassactions),
-    ("ClassAction.org", src_classaction_org),
     ("ClaimDepot", src_claimdepot),
     ("ClaimWatch", src_claimwatch),
     ("FileYourClaim", src_fileyourclaim),
