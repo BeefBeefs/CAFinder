@@ -150,6 +150,11 @@ def src_classaction_org():
                 if title and deadline and val.lower().startswith("no"):
                     out.append(entry(title, deadline, payout, "See ClassAction.org for who qualifies.", page))
                 title = payout = deadline = None
+        if not out:  # help debug the parser from the Actions log
+            hits = [i for i, l in enumerate(lines) if "proof required" in l.lower()]
+            print("   [diag] %s: %d text lines, %d 'Proof Required' lines" % (page, len(lines), len(hits)))
+            for i in hits[:2]:
+                print("   [diag] context:", " | ".join(lines[max(0, i - 6):i + 2]))
     return out
 
 
@@ -172,7 +177,9 @@ def src_claimdepot():
     return out
 
 
-# ---------- source 4: Top Class Actions (article pages with "Proof of Purchase Required: No") ----------
+# ---------- (disabled) Top Class Actions: returns 403 to automated requests, so it is link-only on the page ----------
+# Kept for reference; not in SOURCES. Not worth working around a site that blocks bots.
+# source 4: Top Class Actions (article pages with "Proof of Purchase Required: No") ----------
 def src_topclassactions():
     cat = "https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/"
     links = hrefs(get(cat), r"https://topclassactions\.com/lawsuit-settlements/open-lawsuit-settlements/[^\"#?]+/")
@@ -199,7 +206,6 @@ SOURCES = [
     ("OpenClassActions", src_openclassactions),
     ("ClassAction.org", src_classaction_org),
     ("ClaimDepot", src_claimdepot),
-    ("TopClassActions", src_topclassactions),
 ]
 
 
