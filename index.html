@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>No-Receipt Class Action Finder</title>
+<style>
+:root{--bg:#faf8f4;--card:#fff;--ink:#1f2328;--mute:#6b7280;--line:#e6e1d8;--acc:#1f6f5c;--warn:#b45309;--red:#b42318}
+@media(prefers-color-scheme:dark){:root{--bg:#161614;--card:#1f1f1c;--ink:#ece9e2;--mute:#9a978f;--line:#33322e;--acc:#5fc4a8;--warn:#f0a95a;--red:#f28b82}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.6rem;margin:0 0 4px}
+.sub{color:var(--mute);margin:0 0 16px;font-size:.92rem}
+.bar{display:flex;gap:8px;margin-bottom:12px}
+input[type=search]{flex:1;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:inherit}
+button#refresh{padding:10px 14px;border:1px solid var(--acc);border-radius:10px;background:var(--acc);color:#fff;font:inherit;cursor:pointer}
+.stamp{font-size:.8rem;color:var(--mute);margin:-4px 0 10px}
+.note{font-size:.85rem;color:var(--mute);background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.name{font-weight:600}
+.pay{font-weight:700;color:var(--acc);text-align:right}
+.who{margin:6px 0;font-size:.92rem}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.82rem;color:var(--mute)}
+.tag{padding:2px 8px;border-radius:999px;border:1px solid var(--warn);color:var(--warn)}
+.days{font-weight:600}
+.days.soon{color:var(--red)}
+a{color:var(--acc)}
+.links{margin-top:8px;font-size:.88rem;display:flex;gap:14px;flex-wrap:wrap}
+h2{font-size:1.05rem;margin:28px 0 8px}
+ul.src{padding-left:18px;font-size:.9rem}
+.empty{color:var(--mute);text-align:center;padding:24px}
+</style>
+</head>
+<body>
+<main>
+<h1>No-Receipt Class Action Finder</h1>
+<p class="sub">Open settlements anyone in the class can file by signing a statement, with no receipt, notice ID or code. <span id="gen">Loading…</span></p>
+
+<div class="bar"><input type="search" id="q" placeholder="Search company or keyword" aria-label="Search"><button id="refresh" type="button">Refresh sources</button></div>
+<div class="stamp" id="stamp"></div>
+
+<div class="note"><b>Check before you file.</b> This list is compiled from settlement-tracking sites, which sometimes disagree. Confirm the deadline, eligibility and no-proof terms on the official settlement site. Filing is always free. Many settlements pay a smaller amount without proof and more with it; the amount shown is the no-proof tier where known.</div>
+
+<div id="list"></div>
+
+<h2>Live lists (always current)</h2>
+<ul class="src">
+  <li><a href="https://openclassactions.com/no-proof-class-action-settlements.php">OpenClassActions: no-proof settlements</a></li>
+  <li><a href="https://www.classaction.org/">ClassAction.org: settlements with "Proof Required? No"</a></li>
+  <li><a href="https://www.claimdepot.com/no-proof-class-action-settlements">ClaimDepot: no-proof settlements</a></li>
+  <li><a href="https://settlementinsight.com/class-action-settlements-no-proof-of-purchase">SettlementInsight: no-proof settlements</a></li>
+  <li><a href="https://www.moneypilot.com/blog/class-action-settlements-no-proof-needed">MoneyPilot: no-proof settlements</a></li>
+  <li><a href="https://claimwatch.org/settlements/no-proof">ClaimWatch: no-proof settlements</a></li>
+  <li><a href="https://topclassactions.com/category/lawsuit-settlements/open-lawsuit-settlements/">Top Class Actions: open settlements</a></li>
+  <li><a href="https://openclassactions.com/settlements.php">OpenClassActions: full open-settlements directory</a></li>
+  <li><a href="https://www.claimdepot.com/settlements">ClaimDepot: all settlements (filter by "No Proof")</a></li>
+  <li><a href="https://www.recordinglaw.com/us-laws/data-breach-settlements/open-class-action-settlements/">RecordingLaw: open settlements</a></li>
+  <li><a href="https://thekrazycouponlady.com/tips/money/unclaimed-money-class-action-settlements">Krazy Coupon Lady: current settlements</a></li>
+</ul>
+</main>
+
+<script>
+let S = [], generated = null, query = "";
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = d => new Date(d+"T00:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+const daysLeft = d => { const t=new Date(); t.setHours(0,0,0,0); return Math.round((new Date(d+"T00:00:00")-t)/86400000); };
+const safeUrl = u => /^https:\/\//.test(u||"") ? u : null;
+
+function render(){
+  const rows = S.filter(s => daysLeft(s.d) >= 0)
+    .filter(s => (s.n+" "+s.w).toLowerCase().includes(query))
+    .sort((a,b)=> a.d.localeCompare(b.d));
+  $("#list").innerHTML = rows.length ? rows.map(s=>{
+    const dl = daysLeft(s.d);
+    const dtxt = (dl===0?"Due today":dl+" day"+(dl===1?"":"s")+" left")+" · "+fmt(s.d);
+    const q = encodeURIComponent(s.n.replace(/\(.*?\)/g,"")+" settlement claim form");
+    const u = safeUrl(s.u);
+    return `<div class="card"><div class="top"><div class="name">${esc(s.n)}</div><div class="pay">${esc(s.p)}</div></div>
+      <div class="who">${esc(s.w)}</div>
+      <div class="meta"><span class="days ${dl<=3?"soon":""}">${dtxt}</span>${s.c?'<span class="tag">Verify terms</span>':''}</div>
+      <div class="links"><a href="https://www.google.com/search?q=${q}">Find official claim site</a>${u?`<a href="${esc(u)}">Tracker details</a>`:''}</div></div>`;
+  }).join("") : '<div class="empty">Nothing matches your search.</div>';
+}
+
+async function load(){
+  const btn = $("#refresh"); btn.disabled = true;
+  try{
+    const r = await fetch("settlements.json?t="+Date.now(), {cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    const j = await r.json();
+    S = j.items; generated = j.generated_at;
+    const g = new Date(generated);
+    $("#gen").textContent = "Sources last scanned " + g.toLocaleString([], {month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}) + ".";
+    $("#stamp").textContent = "";
+  }catch(e){
+    $("#gen").textContent = "";
+    $("#stamp").textContent = "Couldn't load settlements.json. Open this page from your GitHub Pages address (or run a local web server), not as a file.";
+  }
+  btn.disabled = false; render();
+}
+$("#q").addEventListener("input",e=>{query=e.target.value.toLowerCase();render()});
+$("#refresh").addEventListener("click",load);
+load();
+</script>
+</body>
+</html>
