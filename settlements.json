@@ -1,14 +1,7 @@
 {
- "generated_at": "2026-11-14T07:42:36+00:00",
- "scraped_count": 0,
+ "generated_at": "2026-11-14T07:53:47+00:00",
+ "scraped_count": 13,
  "items": [
-  {
-   "n": "Forbes Media Website Tracking ($10M)",
-   "d": "2026-11-13",
-   "p": "Pro rata share",
-   "w": "Website tracking privacy class. Listed by one tracker only; check eligibility.",
-   "c": true
-  },
   {
    "n": "CVS Digital Privacy",
    "d": "2026-11-16",
@@ -36,6 +29,14 @@
    "w": "New Mexico consumers identified in FastBucks loan data given to the State. Check the form, since you may need a notice.",
    "u": "https://openclassactions.com/settlements/fastbucks-new-mexico-restitution-program.php",
    "c": true
+  },
+  {
+   "n": "Planned Parenthood Lab Testing Data Breach",
+   "d": "2026-11-24",
+   "p": "Up to $1,000 pro rata",
+   "w": "The Settlement Class is all U.S. residents whose personal information was potentially",
+   "u": "https://openclassactions.com/settlements/data-breaches/lsc-planned-parenthood-lab-data-breach-settlement.php",
+   "c": false
   },
   {
    "n": "Neutrogena Skin360 (BIPA)",
@@ -112,6 +113,22 @@
    "p": "Pro rata cash per pair",
    "w": "Floridians who bought Costa sunglasses from 2013 to 2018.",
    "u": "https://openclassactions.com/settlements/costa-del-mar-florida-sunglasses-class-action-settlement.php"
+  },
+  {
+   "n": "BC Credit Union Overdraft Fee",
+   "d": "2027-01-27",
+   "p": "$1 to $20 per fee, or up to $508.73, plus interest",
+   "w": "Current and former members of the eight credit unions who were charged one or more overdraft administration fees",
+   "u": "https://openclassactions.com/settlements/overdraft-fees/bc-credit-union-overdraft-fee-class-action-settlement.php",
+   "c": false
+  },
+  {
+   "n": "CRA My Account & GCKey Privacy Breach",
+   "d": "2027-02-03",
+   "p": "$80 CAD to $5,200 CAD",
+   "w": "The class is made up of all persons whose personal or financial information in a Government of Canada online account — including CRA My Account, My Service Canada and other accounts accessed with GCKey — was disclosed to",
+   "u": "https://openclassactions.com/settlements/data-breaches/canada-cra-gckey-privacy-breach-settlement.php",
+   "c": false
   },
   {
    "n": "Bigelow Tea \"Made in the USA\"",
