@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T13:27:42+00:00",
+ "generated_at": "2026-11-14T20:58:00+00:00",
  "scraped_count": 3,
  "items": [
   {
@@ -58,14 +58,6 @@
    "p": "Check form",
    "w": "Concessions class action. One tracker lists no proof required; the official site may not state it, so check the form.",
    "c": true
-  },
-  {
-   "n": "STV Inc. $415,000 Washington Pay Transparency",
-   "d": "2026-12-08",
-   "p": "$1,592.71 (estimated)",
-   "w": "See ClaimDepot for who qualifies.",
-   "u": "https://www.claimdepot.com/no-proof-class-action-settlements",
-   "c": false
   },
   {
    "n": "Indegene Junk Fax",
@@ -141,6 +133,14 @@
    "d": "2027-02-25",
    "p": "$10 per purchase, up to $40 without receipts",
    "w": "Bought K9 Advantix II or Advantage II since 2016 at Chewy, Petco, PetSmart, PetMed Express or Petsense."
+  },
+  {
+   "n": "No Proof: Generic Prescription Drug Price-Fixing",
+   "d": "2027-03-08",
+   "p": "Varies",
+   "w": "See ClaimDepot for who qualifies.",
+   "u": "https://www.claimdepot.com/no-proof-class-action-settlements",
+   "c": false
   },
   {
    "n": "Dr. Squatch Products",
