@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-15T07:15:56+00:00",
- "scraped_count": 3,
+ "generated_at": "2026-11-15T15:54:26+00:00",
+ "scraped_count": 43,
  "items": [
   {
    "n": "CVS Digital Privacy",
@@ -14,7 +14,47 @@
    "d": "2026-11-16",
    "p": "See site",
    "w": "Free alerts for new settlements and deadlines. Unsubscribe anytime.",
+   "u": "https://claimwatch.org/settlements/folsom-insurance-agency-robocall-settlement",
+   "c": true
+  },
+  {
+   "n": "Folsom Insurance Agency Robocall",
+   "d": "2026-11-16",
+   "p": "See site",
+   "w": "Folsom Insurance Agency allegedly placed calls and/or left voicemails using an artificial or prerecorded voice to cellular telephone numbers without consent. The settlement establishes an $850,000 fund to resolve claims ",
+   "u": "https://claimwatch.org/settlements/california-casualty-data-incident-settlement",
+   "c": true
+  },
+  {
+   "n": "California Casualty Data Incident",
+   "d": "2026-11-16",
+   "p": "See site",
+   "w": "California Casualty's computer systems were hit by a targeted cyberattack in September 2025, and files containing personal information such as names, medical information, Social Security numbers, and financial account nu",
    "u": "https://claimwatch.org/settlements/cvs-digital-privacy-settlement",
+   "c": true
+  },
+  {
+   "n": "Teleflora TCPA",
+   "d": "2026-11-19",
+   "p": "See site",
+   "w": "The lawsuit alleged that Teleflora LLC violated the Telephone Consumer Protection Act (TCPA) by sending text messages to cellular telephone numbers on the National Do Not Call Registry. Teleflora denies that it violated ",
+   "u": "https://claimwatch.org/settlements/carter-credit-union-data-breach-settlement",
+   "c": true
+  },
+  {
+   "n": "Mental Health Association Data Incident",
+   "d": "2026-11-22",
+   "p": "See site",
+   "w": "A cyberattack on Mental Health Association's computer systems occurred in November 2024. Files containing private information may have been accessed, including names, addresses, Social Security numbers, medical diagnoses",
+   "u": "https://claimwatch.org/settlements/sela-realty-investments-tenant-security-deposit-settlement",
+   "c": true
+  },
+  {
+   "n": "LaVista Fire",
+   "d": "2026-11-23",
+   "p": "See site",
+   "w": "A class action lawsuit claims the defendants are responsible for the November 10, 2023 fire at The Reserve at LaVista Walk apartments in Atlanta and the resulting losses. The defendants deny any wrongdoing. A settlement ",
+   "u": "https://claimwatch.org/settlements/jefferson-county-health-center-data-breach-settlement",
    "c": true
   },
   {
@@ -38,6 +78,22 @@
    "u": "https://openclassactions.com/settlements/neutrogena-skin360-bipa-settlement.php"
   },
   {
+   "n": "Raging Waters Processing Fee",
+   "d": "2026-11-25",
+   "p": "See site",
+   "w": "The lawsuit alleged that Festival Fun Parks, LLC used drip pricing by failing to adequately disclose a mandatory processing fee that was added near the end of checkout when purchasing admission tickets from www.ragingwat",
+   "u": "https://claimwatch.org/settlements/fujifilm-data-breach-settlement",
+   "c": true
+  },
+  {
+   "n": "NYC Department of Correction Strip Search",
+   "d": "2026-11-26",
+   "p": "See site",
+   "w": "The NYC Department of Correction allegedly strip searched individuals upon arrival at the Manhattan Court Division after they had already been strip searched prior to departing Rikers Island. The settlement provides comp",
+   "u": "https://claimwatch.org/settlements/cpap-medical-supplies-data-incident-settlement",
+   "c": true
+  },
+  {
    "n": "Dr. Squatch \"Natural\" Labeling ($9M)",
    "d": "2026-11-27",
    "p": "$0.50 per product; 5 products ($2.50) with no receipt",
@@ -45,11 +101,51 @@
    "u": "https://openclassactions.com/settlements/false-advertising/dr-squatch-natural-class-action-settlement.php"
   },
   {
-   "n": "CVS Digital Privacy",
-   "d": "2026-11-29",
+   "n": "CPAP Medical Supplies Data Incident",
+   "d": "2026-11-27",
    "p": "See site",
-   "w": "CVS Pharmacy and Criteo were sued for allegedly disclosing data from users of CVS Digital Properties, including cvs.com, cvshealth.com, and the CVS app, to Criteo or other third parties through embedded technology, in vi",
-   "u": "https://claimwatch.org/settlements/equifax-dispute-class-action-settlement",
+   "w": "CPAP Medical Supplies and Services, Inc. experienced a targeted cyberattack in December 2024, and files containing private information were accessed. The information may have included names, addresses, emails, phone numb",
+   "u": "https://claimwatch.org/settlements/finastra-data-breach-settlement",
+   "c": true
+  },
+  {
+   "n": "Yellow Social Interactive Pulsz/Pulszbingo",
+   "d": "2026-12-01",
+   "p": "See site",
+   "w": "The lawsuit alleges that Yellow Social Interactive violated state laws in Alabama, Tennessee, Kentucky, Ohio, New Jersey, and Massachusetts by selling virtual chips in its social casino-style games Pulsz and Pulszbingo. ",
+   "u": "https://claimwatch.org/settlements/steel-warehouse-data-incident-settlement",
+   "c": true
+  },
+  {
+   "n": "Steel Warehouse Data Incident",
+   "d": "2026-12-01",
+   "p": "See site",
+   "w": "Steel Warehouse Company, LLC experienced a targeted cyberattack in January 2025 in which files containing private information were accessed. The information may have included names, Social Security numbers, addresses, dr",
+   "u": "https://claimwatch.org/settlements/holt-group-data-incident-settlement",
+   "c": true
+  },
+  {
+   "n": "Evernorth Health and MDLIVE Privacy",
+   "d": "2026-12-01",
+   "p": "See site",
+   "w": "The lawsuit alleges Evernorth Health and MDLIVE disclosed sensitive information and private communications on MDLIVE's patient portal to Google and Meta without consent, violating state and federal law. Defendants deny w",
+   "u": "https://claimwatch.org/settlements/amazon-return-policy-litigation-settlement",
+   "c": true
+  },
+  {
+   "n": "Amazon Return Policy Litigation",
+   "d": "2026-12-02",
+   "p": "See site",
+   "w": "The lawsuit claims that certain Amazon return policies and practices violated Washington consumer protection and other laws. Amazon denies all allegations and any wrongdoing, and the Court has not found Amazon liable. Am",
+   "u": "https://claimwatch.org/settlements/institute-for-human-resources-and-services-data-breach-settlement",
+   "c": true
+  },
+  {
+   "n": "Safe Fleet Data Incident",
+   "d": "2026-12-02",
+   "p": "See site",
+   "w": "Safe Fleet experienced a cyber incident in April 2024 that allowed unauthorized access to files containing personal information, including names, Social Security numbers, driver's license numbers, financial account infor",
+   "u": "https://claimwatch.org/settlements/inotiv-data-breach-settlement",
    "c": true
   },
   {
@@ -60,10 +156,50 @@
    "c": true
   },
   {
+   "n": "Fertility Centers of Illinois Privacy",
+   "d": "2026-12-04",
+   "p": "See site",
+   "w": "The lawsuit alleges Fertility Centers of Illinois, PLLC disclosed website users' personally identifiable information to Facebook and Google without consent in violation of the Electronic Communications Privacy Act. The d",
+   "u": "https://claimwatch.org/settlements/assa-abloy-washington-job-posting-wage-disclosure-settlement",
+   "c": true
+  },
+  {
+   "n": "USC Arcadia Hospital",
+   "d": "2026-12-08",
+   "p": "See site",
+   "w": "The lawsuit alleged USC Arcadia Hospital used Meta Pixel and other tracking technologies on its public-facing website, potentially sharing visitor information. USC Arcadia Hospital denies any wrongdoing, including violat",
+   "u": "https://claimwatch.org/settlements/stv-wage-disclosure-settlement",
+   "c": true
+  },
+  {
    "n": "Indegene Junk Fax",
    "d": "2026-12-09",
    "p": "Up to $250",
    "w": "Received junk faxes covered by the settlement. Listed by one tracker only.",
+   "c": true
+  },
+  {
+   "n": "NC AdaptHealth",
+   "d": "2026-12-11",
+   "p": "See site",
+   "w": "The lawsuit alleges AdaptHealth billed North Carolina consumers for medical equipment they did not receive, rejected, or returned, and sent collection letters suggesting possible legal action. AdaptHealth denies all wron",
+   "u": "https://claimwatch.org/settlements/groundlight-wage-disclosure-settlement",
+   "c": true
+  },
+  {
+   "n": "Simplilearn Data Privacy",
+   "d": "2026-12-16",
+   "p": "See site",
+   "w": "Simplilearn has agreed to a class action settlement concerning data privacy claims. The page does not describe the specific alleged conduct or any admission of wrongdoing. Eligible users may receive compensation.",
+   "u": "https://claimwatch.org/settlements/brockton-neighborhood-health-center-data-incident-settlement",
+   "c": true
+  },
+  {
+   "n": "Brockton Neighborhood Health Center Data Incident",
+   "d": "2026-12-18",
+   "p": "See site",
+   "w": "Brockton Neighborhood Health Center experienced a cyberattack on its network and systems between November 1 and November 3, 2024, which may have exposed the private information of current and former patients. Plaintiffs ",
+   "u": "https://claimwatch.org/settlements/fairmont-federal-credit-union-data-breach-settlement",
    "c": true
   },
   {
@@ -80,10 +216,26 @@
    "w": "Used insurance to pay for at least one prescription at a Kroger-owned pharmacy between Dec 9, 2018 and Aug 23, 2026."
   },
   {
+   "n": "Hospital Español Auxilio Mutuo Data Incident",
+   "d": "2026-12-21",
+   "p": "See site",
+   "w": "A data incident occurred on or around September 2023 in which cybercriminals may have accessed current and former patients' personally identifiable information and protected health information. Plaintiffs allege negligen",
+   "u": "https://claimwatch.org/settlements/american-renal-management-data-breach-settlement",
+   "c": true
+  },
+  {
    "n": "Knott's Berry Farm & Great America",
    "d": "2026-12-22",
    "p": "$8 credit automatically, or cash up to $10 without proof",
    "w": "Doing nothing gets the credit; file a claim if you want cash instead.",
+   "c": true
+  },
+  {
+   "n": "Prime Healthcare Pixel",
+   "d": "2026-12-22",
+   "p": "See site",
+   "w": "The lawsuit claims Prime Healthcare used third-party tracking pixels on its websites, which may have shared patients' personal information without consent and violated state and federal privacy laws. Prime Healthcare den",
+   "u": "https://claimwatch.org/settlements/trc-staffing-services-data-breach-settlement",
    "c": true
   },
   {
@@ -94,11 +246,67 @@
    "c": true
   },
   {
+   "n": "Hyundai Sonata Plug-In Hybrid Battery Repair",
+   "d": "2026-12-28",
+   "p": "See site",
+   "w": "The lawsuit alleges that certain 2016-2019 Hyundai Sonata Plug-In Hybrid vehicles experienced high-voltage battery failures that Hyundai could not repair within 60 days during the warranty period, leaving owners without ",
+   "u": "https://claimwatch.org/settlements/equifax-credit-report-settlement",
+   "c": true
+  },
+  {
+   "n": "SPAL Data Security Incident",
+   "d": "2026-12-28",
+   "p": "See site",
+   "w": "A settlement has been reached with Sherr Puttmann Akins Lamb PC (SPAL) over a targeted cyberattack on its computer systems in August 2024. Files containing personal information—including names, Social Security numbers, d",
+   "u": "https://claimwatch.org/settlements/arizona-labor-force-data-incident-settlement",
+   "c": true
+  },
+  {
+   "n": "Alaska Airlines Germani",
+   "d": "2026-12-28",
+   "p": "See site",
+   "w": "This page is a settlement administrator's case page for a class action settlement involving Alaska Airlines, Inc. The specific allegations and reasons for the settlement are not described on this page.",
+   "u": "https://claimwatch.org/settlements/missouri-delta-medical-center-settlement",
+   "c": true
+  },
+  {
    "n": "GoodRx Privacy ($32M)",
    "d": "2026-12-29",
    "p": "Equal share of fund",
    "w": "Used a GoodRx website, app or service (including GoodRx Gold, HeyDoctor or GoodRx Care) before April 20, 2024.",
    "u": "https://openclassactions.com/settlements/privacy/goodrx-privacy-class-action-settlement.php"
+  },
+  {
+   "n": "Missouri Delta Medical Center",
+   "d": "2026-12-29",
+   "p": "See site",
+   "w": "The lawsuit claimed that Missouri Delta Medical Center used third-party website technologies on its public website, causing certain patient information to be transmitted to third parties. MDMC denies all claims and maint",
+   "u": "https://claimwatch.org/settlements/goodrx-data-privacy-settlement",
+   "c": true
+  },
+  {
+   "n": "GoodRx Data Privacy",
+   "d": "2026-12-31",
+   "p": "See site",
+   "w": "The page describes a data privacy class action settlement involving GoodRx. It does not specify what GoodRx allegedly did. The settlement allows people who used GoodRx websites, apps, or services before April 20, 2024 to",
+   "u": "https://claimwatch.org/settlements/john-deere-repair-services-antitrust-settlement",
+   "c": true
+  },
+  {
+   "n": "John Deere Repair Services Antitrust",
+   "d": "2026-12-31",
+   "p": "See site",
+   "w": "Plaintiffs allege that Deere & Company (John Deere) withheld repair tools from customers and independent repair providers, forcing them to use authorized dealers and pay more for repairs. John Deere denies any wrongdoing",
+   "u": "https://claimwatch.org/settlements/roseland-community-hospital-data-incident-settlement",
+   "c": true
+  },
+  {
+   "n": "Roseland Community Hospital Data Incident",
+   "d": "2027-01-02",
+   "p": "See site",
+   "w": "The lawsuit alleges Roseland Community Hospital Association failed to protect patients' private information during a data incident on or about June 2, 2024, potentially exposing personally identifiable information and pr",
+   "u": "https://claimwatch.org/settlements/avondale-apartments-settlement",
+   "c": true
   },
   {
    "n": "High 5 Games Social Casino",
@@ -108,11 +316,83 @@
    "u": "https://openclassactions.com/settlements/high-5-games-social-casino-class-action-settlement.php"
   },
   {
+   "n": "Power Pro Plumbing",
+   "d": "2027-01-07",
+   "p": "See site",
+   "w": "This page concerns a proposed class action settlement in Aleman v. Power Pro Plumbing, Inc. The specific allegations and reasons for payment are not described on this page. It identifies the case and provides settlement ",
+   "u": "https://claimwatch.org/settlements/arcare-data-breach-settlement",
+   "c": true
+  },
+  {
+   "n": "Stearns, Conrad and Schmidt Consulting Engineers",
+   "d": "2027-01-10",
+   "p": "See site",
+   "w": "The page indicates that a class action settlement has been reached in John Palos, et al. v. Stearns, Conrad and Schmidt, Consulting Engineers, Inc., et al. The specific allegations are not described in the page text.",
+   "u": "https://claimwatch.org/settlements/washington-gastroenterology-data-breach-settlement",
+   "c": true
+  },
+  {
    "n": "Costa Del Mar Florida Sunglasses ($21.75M)",
    "d": "2027-01-11",
    "p": "Pro rata cash per pair",
    "w": "Floridians who bought Costa sunglasses from 2013 to 2018.",
    "u": "https://openclassactions.com/settlements/costa-del-mar-florida-sunglasses-class-action-settlement.php"
+  },
+  {
+   "n": "Costa Del Mar Sunglasses",
+   "d": "2027-01-12",
+   "p": "See site",
+   "w": "Costa Del Mar allegedly promised to repair sunglasses for a \"nominal fee\" but charged consumers more than a nominal fee to repair sunglasses damaged by accident, normal wear and tear, or misuse. The lawsuit claims this w",
+   "u": "https://claimwatch.org/settlements/california-freight-sales-class-action-settlement",
+   "c": true
+  },
+  {
+   "n": "California Freight Sales",
+   "d": "2027-01-12",
+   "p": "See site",
+   "w": "The page discloses a class action settlement involving Sandair Corporation dba California Freight Sales. It does not state what the defendant allegedly did or the nature of the underlying claims. No additional facts abou",
+   "u": "https://claimwatch.org/settlements/new-york-school-of-interior-design-data-breach-settlement",
+   "c": true
+  },
+  {
+   "n": "Lowe Data Incident",
+   "d": "2027-01-18",
+   "p": "See site",
+   "w": "In December 2024, Lowe Engineers' computer systems were targeted by a cyberattack, and files containing personal information may have been accessed. The lawsuit alleges that private information such as names, Social Secu",
+   "u": "https://claimwatch.org/settlements/elma-electronic-class-action-settlement",
+   "c": true
+  },
+  {
+   "n": "Elma Electronic",
+   "d": "2027-01-19",
+   "p": "See site",
+   "w": "The page does not state the specific allegations against Elma Electronic, Inc. It indicates that a class action settlement has been reached in Pardillo v. Elma Electronic, Inc., and a notice of class action settlement is",
+   "u": "https://claimwatch.org/settlements/uncle-credit-union-class-action-settlement",
+   "c": true
+  },
+  {
+   "n": "MarBrisa Hotel Fees",
+   "d": "2027-01-21",
+   "p": "See site",
+   "w": "MarBrisa Carlsbad allegedly charged hotel fees that were not displayed in the advertised room price at the time of purchase between June 3, 2021 and June 17, 2025. The class action settlement resolves these claims.",
+   "u": "https://claimwatch.org/settlements/central-admixture-pharmacy-services-class-action-settlement",
+   "c": true
+  },
+  {
+   "n": "Central Admixture Pharmacy Services",
+   "d": "2027-01-25",
+   "p": "See site",
+   "w": "The page does not describe the alleged wrongdoing or the reason for the settlement. It only identifies a class action settlement involving Central Admixture Pharmacy Services Inc and provides key dates. The settlement ag",
+   "u": "https://claimwatch.org/settlements/dental-intelligence-localmed-portal-settlement",
+   "c": true
+  },
+  {
+   "n": "Dental Intelligence LocalMed Portal",
+   "d": "2027-01-27",
+   "p": "See site",
+   "w": "The lawsuit claims Dental Intelligence's LocalMed Portal collected information from people scheduling, modifying, or rescheduling appointments between March 2022 and June 2025 and transmitted it to Google without consent",
+   "u": "https://claimwatch.org/settlements/the-merchant-of-tennis-data-breach-settlement",
+   "c": true
   },
   {
    "n": "Bigelow Tea \"Made in the USA\"",
@@ -122,11 +402,35 @@
    "u": "https://openclassactions.com/settlements/false-advertising/bigelow-tea-made-in-usa-class-action-settlement.php"
   },
   {
+   "n": "Hernandez v. Allstate Vehicle and Property Insurance Company",
+   "d": "2027-02-08",
+   "p": "See site",
+   "w": "The lawsuit claims Allstate improperly deducted non-material depreciation when adjusting certain property insurance claims in Arizona, which may have reduced claim payments. A proposed settlement has been reached to reso",
+   "u": "https://claimwatch.org/settlements/bigelow-tea-manufactured-in-usa-class-action-settlement",
+   "c": true
+  },
+  {
    "n": "Visa & Mastercard Nonbank ATM Fees ($167.5M)",
    "d": "2027-02-10",
    "p": "Pro rata cash",
    "w": "Paid surcharges at stand-alone, nonbank ATMs between Oct 24, 2007 and Aug 14, 2026.",
    "u": "https://openclassactions.com/settlements/burke-visa-mastercard-atm-fees-settlement.php"
+  },
+  {
+   "n": "Bigelow Tea 'Manufactured in USA'",
+   "d": "2027-02-11",
+   "p": "See site",
+   "w": "The lawsuit alleges that R.C. Bigelow, Inc. falsely and deceptively advertised certain Bigelow tea products as 'Manufactured in the USA.' Bigelow denies the allegations. The parties agreed to settle the lawsuit to avoid ",
+   "u": "https://claimwatch.org/settlements/covenant-health-data-security-settlement",
+   "c": true
+  },
+  {
+   "n": "Covenant Health Data Security",
+   "d": "2027-02-19",
+   "p": "See site",
+   "w": "Covenant Health experienced unauthorized access to its IT environment on or around May 18, 2025, potentially compromising patients' personally identifiable information and private health information. Plaintiffs alleged C",
+   "u": "https://claimwatch.org/settlements/vanilla-prepaid-gift-cards-california-settlement",
+   "c": true
   },
   {
    "n": "Petco, PetSmart & Chewy Flea & Tick (Elanco)",
@@ -143,10 +447,26 @@
    "c": false
   },
   {
-   "n": "Equifax Dispute",
+   "n": "Vanilla Prepaid Gift Cards (California)",
+   "d": "2027-04-08",
+   "p": "See site",
+   "w": "The page reports that a class action settlement has been reached over non-reloadable Vanilla Prepaid Gift Cards in California. It does not state the specific claims or misconduct. The settlement provides payments to elig",
+   "u": "https://claimwatch.org/settlements/zf-trw-airbag-control-units-products-liability-settlement",
+   "c": true
+  },
+  {
+   "n": "Hyundai-Kia Airbag Control Unit",
+   "d": "2027-05-03",
+   "p": "See site",
+   "w": "The lawsuit claims that certain Hyundai and Kia vehicles contain defective ZF-TRW airbag control units that can suffer electrical overstress, potentially causing airbags and other safety features to fail during a collisi",
+   "u": "https://claimwatch.org/settlements/natera-testing-class-action-settlement",
+   "c": true
+  },
+  {
+   "n": "Natera Testing",
    "d": "2028-01-11",
    "p": "See site",
-   "w": "Equifax was sued over claims that it failed to reasonably investigate consumers' disputes about hard credit inquiries, failed to maintain reasonable procedures, and did not remove disputed inquiries from credit files. Pl",
+   "w": "Natera Testing is settling a class action related to billing for noninvasive prenatal testing and genetic carrier screening. Eligible people who were billed above certain amounts can file claims.",
    "u": "https://claimwatch.org/settlements/tbj-drywall-taping-settlement",
    "c": true
   }
