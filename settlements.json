@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T13:57:51+00:00",
+ "generated_at": "2026-11-19T23:16:09+00:00",
  "scraped_count": 49,
  "items": [
   {
@@ -287,14 +287,6 @@
    "c": true
   },
   {
-   "n": "Mixbook $1.99M False Advertising",
-   "d": "2026-12-28",
-   "p": "$12",
-   "w": "See ClaimDepot for who qualifies.",
-   "u": "https://www.claimdepot.com/no-proof-class-action-settlements",
-   "c": false
-  },
-  {
    "n": "Missouri Delta Medical Center",
    "d": "2026-12-28",
    "p": "See site",
@@ -494,6 +486,14 @@
    "d": "2027-02-25",
    "p": "$10 per purchase, up to $40 without receipts",
    "w": "Bought K9 Advantix II or Advantage II since 2016 at Chewy, Petco, PetSmart, PetMed Express or Petsense."
+  },
+  {
+   "n": "No Proof: Generic Prescription Drug Price-Fixing",
+   "d": "2027-03-08",
+   "p": "Varies",
+   "w": "See ClaimDepot for who qualifies.",
+   "u": "https://www.claimdepot.com/no-proof-class-action-settlements",
+   "c": false
   },
   {
    "n": "Vanilla Prepaid Gift Cards (California)",
